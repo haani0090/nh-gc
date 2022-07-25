@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 
 import { Box, Stack, Button, TextField, Typography } from "@mui/material";
 import{ exerciseOptions,fetchData} from '../utils/fetchData'
+import HorizontalScrollbar from "./HorizontalScrollbar";
 
 
-const SearchExercises = () => {
+const SearchExercises = ({setExercises, bodyPart,setBodyPart}) => {
   const [search, setSearch] = useState('');
-  const [exercises,setExercises] = useState([]);
  const [bodyParts, setBodyParts] = useState([])
   //it fetch the catg whenever page load, dependency array is empty coz we call it only once on start
   
@@ -78,6 +78,14 @@ const SearchExercises = () => {
         >
           Search
         </Button>
+      </Box>
+      <Box sx={{position: 'relative',width:'100%',p: '20px'}}>
+      {/* Passing the Data in This Component */}
+          <HorizontalScrollbar data= {bodyParts} 
+          bodyPart={bodyPart}
+          setBodyPart={setBodyPart}
+
+          />
       </Box>
     </Stack>
   );
