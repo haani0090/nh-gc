@@ -18,19 +18,37 @@ const Navbar = () => {
           to="/"
           style={{
             textDecoration: "none",
-            color: "#3A1212",
-            borderBottom: "3px solid #FF2625",
+            color: "#030303",
+            borderBottom: "3px solid #313bac",
           }}
         >
           Home  </Link>
 
           <a
             href="#exercises"
-            style={{ textDecoration: "none", color: "#3A1212" }}
+            style={{ textDecoration: "none", color: "#030303" }}
           >
             {" "}
             Exercises
           </a>
+          <Link
+          to="/"
+          style={{
+            textDecoration: "none",
+            color: "#030303",
+           
+          }}
+        >
+          About  </Link>
+          <Link
+          to="/"
+          style={{
+            textDecoration: "none",
+            color: "#030303",
+           
+          }}
+        >
+          Contact  </Link>
           
       
       </Stack>
