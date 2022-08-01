@@ -44,6 +44,12 @@ body{
   background: #717171; 
 }
 
+<<<<<<< HEAD
+=======
+::-webkit-scrollbar {
+  width: 0px;
+}
+>>>>>>> 31970379a1bfa4e9be550f55009be131ca76c95f
 
 .right-arrow,
 .left-arrow {
