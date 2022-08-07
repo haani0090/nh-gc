@@ -32,24 +32,23 @@ body{
 }
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #6b7688;
+  background: #e4e4e4;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #aaaaaa; 
+  background: #6b7688; 
   border-radius: 10px;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #717171; 
+  background: #ffffff; 
 }
 
-<<<<<<< HEAD
-=======
-::-webkit-scrollbar {
+
+/* ::-webkit-scrollbar {
   width: 0px;
-}
->>>>>>> 31970379a1bfa4e9be550f55009be131ca76c95f
+} */
+
 
 .right-arrow,
 .left-arrow {
@@ -93,9 +92,9 @@ body{
 .hero-banner-img {
   position: absolute;
   right: 40px;
-  top: 0px;
-  width: 700px;
-  height: 900px;
+  top: 5px;
+  width: 600px;
+  height: 800px;
   margin-top: -330px;
 
 }

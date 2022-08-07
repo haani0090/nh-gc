@@ -1,7 +1,6 @@
-//for ui we will use tailwind css
-//add tailwind cdn in index.html
 
 import { useState } from "react";
+import { Box,Stack, Typography } from '@mui/material';
 
 export default function App() {
   const [height, setHeight] = useState("");
@@ -31,10 +30,18 @@ export default function App() {
   }
 
   return (
-    <div className="w-full max-w-xs m-10">
+<>
+<hr/>
+<Box sx={{ mt: { lg: '212px', xs: '70px' }, ml: { sm: '50px' } }} position="relative" p="20px">
+
+<Typography  fontFamily="mono" fontWeight={700} sx={{ fontSize: { lg: '44px', xs: '30px' } }} mb="49px" textAlign="center">
+The body mass index (BMI) calculator calculates 
+body mass index from your weight and height.
+      </Typography>
+      <Stack className="w-full max-w-xs m-10">
       <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
         <h1 className="text-center mb-4 text-xl"> BMI Calculator</h1>
-        <div className="mb-4">
+        <Stack className="mb-4">
           <label
             className="block text-gray-700 text-sm font-bold mb-2"
             for="username"
@@ -49,8 +56,8 @@ export default function App() {
             value={height}
             onChange={(e) => setHeight(e.target.value)}
           />
-        </div>
-        <div className="mb-6">
+        </Stack>
+        <Stack className="mb-6">
           <label
             className="block text-gray-700 text-sm font-bold mb-2"
             for="password"
@@ -65,23 +72,27 @@ export default function App() {
             value={weight}
             onChange={(e) => setWeight(e.target.value)}
           />
-        </div>
-        <div className="flex items-center justify-center">
+        </Stack>
+        <Stack className="flex items-center justify-center">
           <button
-            className="bg-purple-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-blue-700 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="button"
             onClick={calculateBMI}
           >
             Calculate BMI
           </button>
-        </div>
+        </Stack>
         {bmiResult && (
-          <div className="mt-4">
+          <Stack className="mt-4">
             <p>Your BMI is: {bmiResult} </p>
             <p>You are currently: {status}</p>
-          </div>
+          </Stack>
         )}
       </form>
-    </div>
+    </Stack>
+    </Box>
+    <hr/>
+</>
+    
   );
 }
