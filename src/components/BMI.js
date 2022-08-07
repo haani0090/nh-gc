@@ -3,6 +3,9 @@ import { useState } from "react";
 import { Box,Stack, Typography } from '@mui/material';
 
 export default function App() {
+/**
+ * Function calculateBMI()
+ */
   const [height, setHeight] = useState("");
   const [weight, setWeight] = useState("");
 
@@ -38,19 +41,19 @@ export default function App() {
 The body mass index (BMI) calculator calculates 
 body mass index from your weight and height.
       </Typography>
-      <Stack className="w-full max-w-xs m-10">
+      <Stack className="w-full border rounded  max-w-xl m-10">
       <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
         <h1 className="text-center mb-4 text-xl"> BMI Calculator</h1>
         <Stack className="mb-4">
           <label
             className="block text-gray-700 text-sm font-bold mb-2"
-            for="username"
+            for="height"
           >
             Height
           </label>
           <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="Height "
+            className=" border rounded w-full py-2 px-3 text-white leading-tight"
+            id="Height"
             type="text"
             placeholder="Height in cm"
             value={height}
@@ -60,12 +63,12 @@ body mass index from your weight and height.
         <Stack className="mb-6">
           <label
             className="block text-gray-700 text-sm font-bold mb-2"
-            for="password"
+            for="weight"
           >
             Weight
           </label>
           <input
-            className="shadow appearance-none  rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+            className="  rounded w-full py-2 px-3 text-white mb-3"
             id="Weight"
             type="Weight in kg"
             placeholder="Weight in cm"
@@ -75,7 +78,7 @@ body mass index from your weight and height.
         </Stack>
         <Stack className="flex items-center justify-center">
           <button
-            className="bg-blue-700 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-blue-700 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded"
             type="button"
             onClick={calculateBMI}
           >
