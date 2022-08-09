@@ -9,9 +9,12 @@ import ExerciseVideos from '../components/ExerciseVideos';
 
 
 const ExerciseDetail = () => {
+  /* This is a React Hook. It is a function that lets you “hook into” React state and lifecycle
+  features from function components. */
   const [exerciseDetail, setExerciseDetail] = useState({});
   const [exerciseVideos, setExerciseVideos] = useState([]);
  
+  /* Destructuring the id from the useParams hook. */
   const { id } = useParams();
 
  /* The above code is using the useEffect hook to fetch data from the exercise database and youtube. */

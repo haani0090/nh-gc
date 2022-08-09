@@ -85,7 +85,7 @@ body mass index from your weight and height.
             Calculate BMI
           </button>
         </Stack>
-        {bmiResult && (
+          {bmiResult && (
           <Stack className="mt-4">
             <p>Your BMI is: {bmiResult} </p>
             <p>You are currently: {status}</p>
