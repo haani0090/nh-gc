@@ -52,7 +52,7 @@ body mass index from your weight and height.
             Height
           </label>
           <input
-            className=" border rounded w-full py-2 px-3 text-white leading-tight"
+            className=" border rounded w-full py-2 px-3 text-black leading-tight"
             id="Height"
             type="text"
             placeholder="Height in cm"
@@ -68,7 +68,7 @@ body mass index from your weight and height.
             Weight
           </label>
           <input
-            className="  rounded w-full py-2 px-3 text-white mb-3"
+            className=" border rounded w-full py-2 px-3 text-black leading-tight"
             id="Weight"
             type="Weight in kg"
             placeholder="Weight in cm"
