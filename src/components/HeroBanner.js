@@ -16,7 +16,9 @@ live your life to the fullest.
     Explore the most effective exercises personalized to you
     </Typography>
     <Stack>
-      <a href="#exercises" style={{ marginTop: '45px', textDecoration: 'none', width: '200px', textAlign: 'center', background: 'blue', padding: '14px', fontSize: '22px', textTransform: 'none', color: 'white', borderRadius: '4px' }}>Explore</a>
+    <br/>
+      <a href="#exercises" className="hover:shadow-xl bg-blue-600 text-white font-bold rounded-full w-32 my-0 py-0 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+      Explore</a> 
     </Stack>
     <Typography fontWeight={600} color="#46364a" sx={{ opacity: '0.1',  fontSize: '200px' }}>
       Exercise 

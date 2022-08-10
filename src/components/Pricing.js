@@ -30,7 +30,7 @@ const Pricing = () => {
                 <Typography className='flex py-4'><CheckIcon className='w-8 mr-5 text-green-600'  />For 5 Sessions</Typography>
                 <Typography className='flex py-4'><CheckIcon className='w-8 mr-5 text-green-600'  />Limit One/Customer </Typography>
                 
-                <button style={{ marginTop: '45px', textDecoration: 'none', width: '200px', textAlign: 'center', background: 'blue', padding: '14px', fontSize: '22px', textTransform: 'none', color: 'white', borderRadius: '4px' }}>Get Started</button>
+                <button className="hover:shadow-xl bg-blue-600 text-white font-bold rounded-full my-0 py-0 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">Get Started</button>
             </Box>
           </Box>
           <Box className='bg-white text-black m-4 p-8 rounded-xl shadow-2xl relative'>
@@ -43,7 +43,7 @@ const Pricing = () => {
                 <Typography className='flex py-4'><CheckIcon className='w-8 mr-5 text-green-600'  />For 12 Sessions</Typography>
                 <Typography className='flex py-4'><CheckIcon className='w-8 mr-5 text-green-600'  />Full Group max, 5 at atime</Typography>
             
-                <button  style={{ marginTop: '45px', textDecoration: 'none', width: '200px', textAlign: 'center', background: 'blue', padding: '14px', fontSize: '22px', textTransform: 'none', color: 'white', borderRadius: '4px' }}>Get Started</button>
+                <button className="hover:shadow-xl bg-blue-600 text-white font-bold rounded-full my-0 py-0 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">Get Started</button>
             </Box>
           </Box>
         </Box>

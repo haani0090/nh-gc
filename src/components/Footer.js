@@ -18,20 +18,20 @@ const Footer = () => (
             <Box>
                 <h6 className='font-bold text-primary uppercase pt-2'>Support</h6>
                 <Stack>
-                    <a href='/' className='cursor-pointer hover:shadow-xl py-1'>Pricing</a>
-                    <a href='/' className='cursor-pointer hover:shadow-xl py-1'>Documentation</a>
-                    <a href='/' className='cursor-pointer hover:shadow-xl py-1'>Guides</a>
-                    <a href='/' className='cursor-pointer hover:shadow-xl py-1'>API Status</a>
+                    <a href='/' className='cursor-pointer   hover:underline py-1'>Pricing</a>
+                    <a href='/' className='cursor-pointer hover:underline py-1'>Documentation</a>
+                    <a href='/' className='cursor-pointer hover:underline py-1'>Guides</a>
+                    <a href='/' className='cursor-pointer hover:underline py-1'>API Status</a>
                 </Stack>
             </Box>
             <Box>
                 <h6 className='font-bold uppercase pt-2'>Company</h6>
                 <Stack>
-                    <a href='/' className='cursor-pointer hover:shadow-xl py-1'>About</a>
-                    <a href='/' className='cursor-pointer hover:shadow-xl py-1'>Blog</a>
-                    <a href='/' className='cursor-pointer hover:shadow-xl py-1'>Jobs</a>
-                    <a href='/' className='cursor-pointer hover:shadow-xl py-1'>Press</a>
-                    <a href='/' className='cursor-pointer hover:shadow-xl py-1'>Partners</a>
+                    <a href='/' className='cursor-pointer hover:underline py-1'>About</a>
+                    <a href='/' className='cursor-pointer hover:underline py-1'>Blog</a>
+                    <a href='/' className='cursor-pointer hover:underline py-1'>Jobs</a>
+                    <a href='/' className='cursor-pointer hover:underline py-1'>Press</a>
+                    <a href='/' className='cursor-pointer hover:underline py-1'>Partners</a>
                 </Stack>
             </Box>
            
@@ -40,7 +40,7 @@ const Footer = () => (
                 <Typography className='py-4'>The latest news, articles, and resources, sent to your inbox weekly.</Typography>
                 <form className='flex flex-col sm:flex-row'>
                     <input className='w-full p-2 mr-4 rounded-md mb-4 bg-slate-300 ' type="email" placeholder='Enter email..'/>
-                    <button style={{ textDecoration: 'none', textAlign: 'center', background: 'blue', padding: '10px', fontSize: '16px', textTransform: 'none', color: 'white', borderRadius: '4px' }}>Subscribe</button>
+                    <button className="hover:shadow-xl bg-blue-600 text-white font-bold rounded-full my-0 py-0 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">Subscribe</button>
                 </form>
             </Box>
         </Box>
@@ -48,7 +48,7 @@ const Footer = () => (
         <Box className='flex flex-col max-w-[1240px] px-2 py-4 mx-auto justify-between sm:flex-row text-center text-gray-500'>
         <Typography className='py-4'>2022 Made with ❤️ in University Of Narowal. All rights reserved</Typography>
         <Box className='flex cursor-pointer hover:color-primary justify-between sm:w-[300px] pt-4 text-2xl'>
-            <FaFacebook />
+            <FaFacebook  />
             <FaInstagram />
             <FaTwitter />
             <FaTwitch />

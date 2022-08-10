@@ -11,12 +11,13 @@ const Navbar = () => {
       sx={{ gap: { sm: "122px ", xs: "40px" }, mt: { sm: "32px", xs: "20px" },justifyContent:'none' }}px='20px'
     >
       <Link to="/">
-        <img src={Logo} alt="logo" style={{ width: "68px", height: "68px" }} />
+        <img src={Logo} alt="logo" style={{ width: "78px", height: "78px" }} />
       </Link>
       <Stack direction="row" gap="40px" fontSize="24px" alignItems="flex-end">
         <Link
           to="/"
           style={{
+            
             textDecoration: "none",
             color: "#030303",
             borderBottom: "3px solid #313bac",
