@@ -9,19 +9,13 @@ import ExerciseVideos from '../components/ExerciseVideos';
 
 
 const ExerciseDetail = () => {
-  /* This is a React Hook. It is a function that lets you “hook into” React state and lifecycle
-  features from function components. */
+  
   const [exerciseDetail, setExerciseDetail] = useState({});
   const [exerciseVideos, setExerciseVideos] = useState([]);
  
   /* Destructuring the id from the useParams hook. */
   const { id } = useParams();
 
- /* The above code is using the useEffect hook to fetch data from the exercise database and youtube. */
-  /**
-   * We're using the `useEffect` hook to fetch the exercise data from the RapidAPI exercise database
-   * and the YouTube search API
-   */
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
@@ -43,11 +37,9 @@ const ExerciseDetail = () => {
 
   return (
     <Box sx={{ mt: { lg: '96px', xs: '60px' } }}>
-     {/* The above code is passing the exerciseDetail and exerciseVideos props to the Detail and
-     ExerciseVideos components.  */}
+
      <Detail exerciseDetail={exerciseDetail} />
         <ExerciseVideos exerciseVideos={exerciseVideos} name={exerciseDetail.name} />
-      {/*<SimilarExercises targetMuscleExercises={targetMuscleExercises} equipmentExercises={equipmentExercises} /> */}
     </Box>
   );
 };

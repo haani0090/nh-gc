@@ -7,7 +7,7 @@ import HorizontalScrollbar from './HorizontalScrollbar';
 const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
   const [search, setSearch] = useState('');
   const [bodyParts, setBodyParts] = useState([]);
-/* Fetching the data from the API and setting the state of bodyParts. */
+
 
   useEffect(() => {
     const fetchExercisesData = async () => {
@@ -18,10 +18,6 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 
     fetchExercisesData();
   }, []);
-/**
- * The function takes the search input from the user and filters the exercises data based on the
- * search input
- */
 
   const handleSearch = async () => {
     if (search) {

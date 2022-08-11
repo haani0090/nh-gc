@@ -16,9 +16,9 @@ const Home = () => {
     <Box>
       <HeroBanner />
       <BMI/>
-      {/*  Passing the state of the component to the SearchExercises component. */ }
+    
       <SearchExercises setExercises={setExercises} bodyPart={bodyPart} setBodyPart={setBodyPart} />
-     {/* Passing the state of the component to the Exercises component. */}
+     
       <Exercises setExercises={setExercises} exercises={exercises} bodyPart={bodyPart} />
       <Pricing/>
     </Box>

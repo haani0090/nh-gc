@@ -13,7 +13,7 @@ const App = () => {
     <Box>
     <Navbar />
       <Routes>
-       {/* A route. It is saying that if the path is "/" then render the Home component.  */}
+       
         <Route path= "/" element={<Home/>} />
         <Route path = "/exercise/:id" element={<ExcerciseDetail/>} />
       </Routes>
