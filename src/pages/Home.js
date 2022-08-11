@@ -6,6 +6,7 @@ import SearchExercises from '../components/SearchExercises';
 import HeroBanner from '../components/HeroBanner';
 import BMI from '../components/BMI';
 import Pricing from './../components/Pricing';
+import Sohailzack from './../components/Sohailzack';
 
 const Home = () => {
 /* Setting the state of the component. */
@@ -20,7 +21,9 @@ const Home = () => {
       <SearchExercises setExercises={setExercises} bodyPart={bodyPart} setBodyPart={setBodyPart} />
      
       <Exercises setExercises={setExercises} exercises={exercises} bodyPart={bodyPart} />
+      <Sohailzack/>
       <Pricing/>
+      
     </Box>
   );
 };

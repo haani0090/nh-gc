@@ -3,9 +3,7 @@ import { useState } from "react";
 import { Box,Stack, Typography } from '@mui/material';
 
 export default function App() {
-/**
- * Function calculateBMI()
- */
+
   const [height, setHeight] = useState("");
   const [weight, setWeight] = useState("");
 
